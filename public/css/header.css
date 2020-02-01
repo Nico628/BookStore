@@ -1,0 +1,15 @@
+#header {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+#logo {
+    height: 100px;
+    width: 200px; 
+}
+
+#banner {
+    height: 100px;
+    width: 800px;
+}

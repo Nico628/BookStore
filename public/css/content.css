@@ -1,0 +1,225 @@
+#content {
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 800px;
+    /* grid-column-gap: 10px; */
+}
+
+.menuItem {
+    list-style: none;
+    padding: 10px;
+    display: block;
+    margin: 0;
+}
+
+.menuItem:hover {
+    background-color: gainsboro;
+    color: orange;
+}
+
+#productList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.productName {
+    padding: 2px 16px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product:hover {
+    background-color: gainsboro;
+}
+
+.product:hover img {
+    opacity: 0.7
+}
+
+.product:hover .btn-add  {
+    visibility: visible;
+}
+
+.product:hover .btn-remove  {
+    visibility: visible;
+}
+
+.product:hover .productPrice {
+    visibility: visible;
+}
+
+.product > img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.product .productPrice {
+    position: relative;
+    bottom: 30px;
+    visibility: hidden;
+    background-color: orange;
+}
+
+
+.btn-add {
+    visibility: hidden;
+    width: 80px;
+    display: inline-block;
+    padding: 15px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(39, 38, 38);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .btn-add:hover {background-color: #706f6f}
+  
+  .btn-add:active {
+    background-color: #050505;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .btn-remove {
+    visibility: hidden;
+    width: 80px;
+    display: inline-block;
+    padding: 15px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(39, 38, 38);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .btn-remove:hover {background-color: #706f6f}
+  
+  .btn-remove:active {
+    background-color: #050505;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+  #btn-show-cart {
+    width: 80px;
+    height: 50px;
+    display: inline-block;
+    padding: 15px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(39, 38, 38);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  #btn-show-cart:hover {background-color: #706f6f}
+  
+  #btn-show-cart:active {
+    background-color: #050505;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  #modal {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #modal-content {
+      width: 500px;
+      height: 300px;
+      background-color: rgba(255,255,255,1);
+      border-radius: 4px;
+      text-align: center;
+      padding: 20px;
+  }
+
+  table,td {
+    border: 1px solid #333;
+    width: 100%;
+  }
+
+  thead,tfoot {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #btn-check-out {
+    width: 80px;
+    height: 50px;
+    display: inline-block;
+    padding: 15px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  #btn-check-out:hover {background-color: #706f6f}
+  
+  #btn-check-out:active {
+    background-color: #ffffff;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #btn-hide-cart   {
+    width: 80px;
+    height: 50px;
+    display: inline-block;
+    padding: 15px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(39, 38, 38);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  #btn-hide-cart  :hover {background-color: #706f6f}
+  
+  #btn-hide-cart  :active {
+    background-color: #050505;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
